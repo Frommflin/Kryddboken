@@ -1,0 +1,54 @@
+:root {
+    --primary: #AFB49A;
+    --primary-dark: #939B6F;
+    --secondary: #EEEAAA;
+  }
+
+body{
+    margin: 0px;
+    color: black;
+}
+
+nav{
+    background-image: url(./images/fresh_herbs.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+ul{
+    width: 100%;
+    background-color: var(--primary);
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+li{
+    display: inline;
+}
+
+a, a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: var(--secondary);
+    transition: 500ms
+}
+
+.attribution{
+    opacity: .5;
+    font-size: small;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
