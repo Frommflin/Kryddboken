@@ -2,11 +2,17 @@
     --primary: #AFB49A;
     --primary-dark: #939B6F;
     --secondary: #EEEAAA;
-  }
+}
+
+/* Mobile first approach */
 
 body{
     margin: 0px;
+    min-height: 100vh;
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 nav{
@@ -20,7 +26,6 @@ nav{
 }
 
 ul{
-    width: 100%;
     background-color: var(--primary);
     margin: 0;
     padding: 10px;
@@ -51,4 +56,32 @@ li a:hover{
 h1{
     font-size: 3rem;
     text-align: center;
+}
+
+footer{
+    background-color: var(--primary);
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 10px 20px;
+}
+
+address{
+    padding: 0 0 10px 15px;
+}
+
+
+/* Medium screens */
+@media screen and (min-width: 768px) {
+    footer{
+        flex-direction: row;
+        gap: 5rem;
+    }
+}
+
+/* Large screens */
+
+@media screen and (min-width: 1200px) {
+    
 }
