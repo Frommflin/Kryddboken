@@ -75,6 +75,31 @@ address{
     padding: 0 0 10px 15px;
 }
 
+#spiceCards{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: auto auto auto; /* 3 rows, each adjusting height according to content */
+    background-color: var(--primary);
+    border: 1px solid var(--primary-dark);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.spiceImg{
+    width: 300px;
+    justify-self: center;
+}
+
+.spiceName{
+    color: var(--secondary);
+    justify-self: center;
+}
+
 
 /* Medium screens */
 @media screen and (min-width: 768px) {
