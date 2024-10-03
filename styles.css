@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 :root {
     --primary: #AFB49A;
     --primary-dark: #939B6F;
     --secondary: #EEEAAA;
+    --shadow-into-light: "Shadows Into Light", cursive;
 }
 
 /* Mobile first approach */
@@ -62,7 +65,8 @@ h1{
     text-align: center;
 }
 
-h2{
+h1, h2, h3{
+    font-family: var(--shadow-into-light);
     color: var(--secondary);
 }
 
@@ -72,7 +76,6 @@ h2{
 
 footer{
     background-color: var(--primary);
-    color: var(--secondary);
     display: flex;
     flex-direction: column;
     gap: 2rem;
